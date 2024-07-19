@@ -1,4 +1,4 @@
-name: Check dist
+name: Check hprofile workflow
 
 on:
   push:
@@ -16,7 +16,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Code checkout 
       - uses: actions/checkout@v4.1.6
+
             
 
            
