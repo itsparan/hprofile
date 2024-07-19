@@ -28,8 +28,6 @@ jobs:
           with:
                 distribution: 'temurin' # See 'Supported distributions' for available options
                 java-version: '21'
-
-       
         - name: Setup SonarQube
           uses: warchant/setup-sonar-scanner@v7
    
