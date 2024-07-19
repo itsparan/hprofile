@@ -17,5 +17,7 @@ jobs:
 
     steps:
         - uses: actions/checkout@v4.1.6
-        - run: mvn test
+
+        - name: Maven test
+          run: mvn test
 
