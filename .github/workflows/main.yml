@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  check-dist:
+  testing-dist:
     runs-on: ubuntu-latest
 
     steps:
