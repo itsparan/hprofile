@@ -3,6 +3,15 @@ on: workflow_dispatch
 jobs:
     Testing:
         runs-on: ubuntu-latest
-       
+        steps:
+            - name: Checkout
+            uses: actions/checkout@v4.1.7
+
+            - name: Maven test
+            uses: mvn test
+
+            - name: Checkstyle
+            run: mvn checkstyle:checkstyle
+            
 
            
