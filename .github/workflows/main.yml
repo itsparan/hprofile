@@ -35,10 +35,8 @@ jobs:
    
    
         - name: SonarQube Scan
-          run: sonar-scanner
-             -Dsonar.host.url=${{ secrets.SONAR_URL }}
-            
-
+           run: sonar-scanner
+      
 
         
 
