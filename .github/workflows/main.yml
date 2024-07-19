@@ -1,4 +1,4 @@
-name: Check dist
+name: Ctesting dist
 
 on:
   push:
