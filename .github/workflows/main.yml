@@ -24,5 +24,12 @@ jobs:
         - name: Checkstyle
           run: mvn checkstyle:checkstyle
 
+        - name: set java 11
+          uses: action/setup-java@v3
+          with:
+             distribution: 'temurin'
+             java-version: '11'
+
+
         
 
