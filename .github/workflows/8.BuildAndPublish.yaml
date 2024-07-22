@@ -30,16 +30,11 @@ jobs:
       - name: Code checkout
         uses: actions/checkout@v4
 
-      - name: Build & Upload image to ECR
-        uses: appleboy/docker-ecr-action@master
+      - uses: bitovi/github-actions-ecr-publish@v0.1.0
         with:
-         access_key: AKIA6ODUZV3B5QV7FO2Z
-         secret_key: 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
-         registry: 992382398147.dkr.ecr.us-east-1.amazonaws.com
-         repo: actappvprofile
-         region: us-east-1
-         tags: latest
-         dockerfile: ./Dockerfile
-         context: ./
-
+          aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws_default_region: us-east-1
+          aws_ecr_repo_name: actappvprofile
+          
   
