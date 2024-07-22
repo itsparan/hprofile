@@ -36,6 +36,6 @@ jobs:
           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws_default_region: us-east-1
           aws_ecr_repo_name: actappvprofile
-          tags: latest,${{ github.run_number }}
+          tags: latest-${{ github.run_number }}
 
   
