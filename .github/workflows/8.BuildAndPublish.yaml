@@ -24,7 +24,7 @@ jobs:
 
 # Setup java 11 to be default (sonar-scanner requirement as of 5.x)
   BUILD_AND_PUBLISH:
-    needs: Testing
+    
     runs-on: ubuntu-latest
     steps:
       - name: Code checkout
@@ -33,11 +33,11 @@ jobs:
       - name: Build & Upload image to ECR
         uses: appleboy/docker-ecr-action@master
         with:
-         access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
-         secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-         registry: ${{ secrets.REGISTRY }}
+         access_key: AKIA6ODUZV3B5QV7FO2Z
+         secret_key: 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
+         registry: 992382398147.dkr.ecr.us-east-1.amazonaws.com
          repo: actappvprofile
-         region: ${{ secrets.AWS_REGION }}
+         region: us-east-1
          tags: latest,${{ github.run_number }}
          daemon_off: false
          dockerfile: ./Dockerfile
