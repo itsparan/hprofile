@@ -24,7 +24,7 @@ jobs:
 
 # Setup java 11 to be default (sonar-scanner requirement as of 5.x)
   BUILD_AND_PUBLISH:
-    
+    needs: Testing
     runs-on: ubuntu-latest
     steps:
       - name: Code checkout
@@ -36,5 +36,5 @@ jobs:
           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws_default_region: us-east-1
           aws_ecr_repo_name: actappvprofile
-          
+
   
