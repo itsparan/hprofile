@@ -39,7 +39,6 @@ jobs:
          repo: actappvprofile
          region: us-east-1
          tags: latest
-         daemon_off: false
          dockerfile: ./Dockerfile
          context: ./
 
