@@ -1,1 +1,9 @@
+complete guidelines and setup for AWS CI/CD using AWS code commit repo, AWS ECR, and ECS
+
+1
+step 1 Create IAM user assign role for aws code commit full access 
+
+step 2 create access key for AWS configuration 
+step 3 configure your local desktop using access key and secret key 
+
 
